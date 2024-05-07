@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lisu Bosa", serif;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column; /* Yatay sıralamayı düzelten satır */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.46), rgba(4, 9, 30, 0.882)),
+    url(raf.jpg);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-section {
+  width: 30%; /* İstenilen genişlik ayarı */
+  text-align: right;
+  text-align: center;
+}
+.container .card {
+  /* max-width: 200px; */
+  width: 308px;
+  position: relative;
+  height: 400px;
+  background: #f0f0f0;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.5px 10px #fffbfb;
+  transition: 0.3s ease-in-out;
+  margin-top: 5%;
+}
+
+.container .card .imgBx {
+  position: relative;
+  width: 260px; /* Resim konteynerini kartın genişliği kadar yapar 100%*/
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 1.2);
+}
+
+.container .card .imgBx img {
+  max-width: 100%;
+  width: 100%; /*bu benim resimleri containera koymamı sağladı*/
+  height: 100%; /*bu benim resimleri containera koymamı sağladı*/
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* .imgBx:hover img {
+  transform: scale(1.1);
+} */
+
+.container.card .imgBx h2 {
+  font-size: 10px;
+}
+.card .imgBx p .form-input input[type="text"] {
+  font-size: 90px;
+  color: red;
+}
+
+.form-input input[type="button"] {
+  /* Bu CSS kuralları, .form-input sınıfına ait inputlara uygulanır */
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  color: red;
+  /* Diğer stillendirme özellikleri ekleyebilirsiniz */
+}
+.button {
+  background-color: #4caf50; /* Yeşil */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049; /* Koyu yeşil */
+}
+
+.container .card input[type="text"] {
+  width: 200px; /* Metin giriş alanlarının genişliği */
+  padding: 10px; /* Metin giriş alanlarının iç kenar boşluğu */
+  margin-bottom: 10px; /* Metin giriş alanlarının altında boşluk */
+  border: 1px solid #ccc; /* Metin giriş alanlarının kenarlık rengi ve kalınlığı */
+  border-radius: 5px; /* Metin giriş alanlarının kenar yuvarlaklığı */
+}
+
+.container .card input[type="submit"] {
+  padding: 10px 20px; /* Gönderme düğmesinin iç kenar boşluğu */
+  background-color: #4caf50; /* Gönderme düğmesinin arkaplan rengi */
+  color: white; /* Gönderme düğmesinin metin rengi */
+  border: none; /* Gönderme düğmesinin kenarlık yok */
+  border-radius: 5px; /* Gönderme düğmesinin kenar yuvarlaklığı */
+  cursor: pointer; /* Gönderme düğmesinin imleci değiştir */
+}
+
+.container .card input[type="submit"]:hover {
+  background-color: #45a049; /* Gönderme düğmesinin üzerine gelindiğinde arkaplan rengi */
+}
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none; /* Linkin altını çizmemesi için */
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}

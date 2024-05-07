@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+
+   .card .imgBx h2 {
+        font-size: 15px;
+         }
+        
+    input[type="text"] {
+      border-radius: 5px; 
+      background-color: #f0f0f0; 
+      padding: 5px; 
+    }
+  </style>
+  
+</head>
+<body>
+  
+  
+
+    <div class="container"> 
+      
+    
+      <div class="card">
+        <div class="imgBx">
+            <img src="yonetici.jpg" />
+          </a>
+
+          <h1>Yetkili Girişi</h1>
+          <p>
+            <form action="giris1.php" method="post">
+              ID:<br>
+              <input type="text" name="ID">
+             Sifre:<br>
+              <input type="text" name="Sifre"><br>
+             <input type="submit" value="Giris Yap">
+          </form>
+           
+          </p>
+        
+        </div>
+      </div>
+      <div class="card">
+       
+        <div class="imgBx">
+            <img src="calisan.png" />
+          </a>
+          
+          <h1>Çalışan Girişi</h1>
+          <p>
+           
+            <form action="giris2.php" method="post">
+                ID: <br>
+                <input type="text" name="ID">
+               Sifre: <input type="text" name="Sifre">
+               <input type="submit" value="Giris Yap">
+            </form>
+            <p>
+        </div>
+      </div>
+
+</html>
+</body>
